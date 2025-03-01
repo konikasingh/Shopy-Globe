@@ -1,0 +1,141 @@
+.product-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f3eded;
+}
+
+.product-detail-card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    /* Make the content wrap for smaller screens */
+}
+
+.product-detail-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.product-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #e60023;
+    font-weight: bold;
+}
+
+.discount {
+    color: #ff5722;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.product-category,
+.product-rating {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.low-stock {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.product-specs {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.product-reviews {
+    background-color: #d5a654;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 1rem;
+}
+
+.review-date {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .product-detail-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-detail-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-title {
+        text-align: center;
+    }
+
+    .product-detail-info {
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .product-price,
+    .product-category,
+    .product-rating {
+        text-align: center;
+    }
+
+    .product-specs {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-description,
+    .product-price,
+    .product-category,
+    .product-rating {
+        font-size: 1rem;
+    }
+
+    .product-specs {
+        font-size: 0.85rem;
+    }
+}

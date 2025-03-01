@@ -1,0 +1,82 @@
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    transition: all 0.7s;
+}
+
+/* Style for the product image */
+.card-horizontal .product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-horizontal .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-horizontal .top-horizontal {
+    background-color: #cd8607;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 100%;
+    gap: 0.6rem;
+}
+
+.card-horizontal .top-horizontal .title-horizontal {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.card-horizontal .bottom-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.card-horizontal .bottom-horizontal .left-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-horizontal .bottom-horizontal .removebtn {
+    background-color: black;
+    padding: 0.3rem 0.7rem;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    .card-horizontal {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-horizontal .product-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-horizontal .top-horizontal {
+        width: 100%;
+    }
+
+    .card-horizontal .bottom-horizontal {
+        width: 100%;
+    }
+}

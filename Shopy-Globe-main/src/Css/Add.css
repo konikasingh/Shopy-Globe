@@ -1,0 +1,81 @@
+/* Unique class names for the Add Product form */
+.add-product-container-unique {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-container-unique h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.form-group-unique {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group-unique label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group-unique input[type="text"],
+.form-group-unique input[type="number"],
+.form-group-unique textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-group-unique textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-button-unique {
+    width: 100%;
+    padding: 12px;
+    background-color: #f6b93b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button-unique:hover {
+    background-color: #e58e26;
+}
+
+@media (max-width: 600px) {
+    .add-product-container-unique {
+        padding: 15px;
+    }
+
+    .add-product-container-unique h1 {
+        font-size: 1.5rem;
+    }
+
+    .submit-button-unique {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
